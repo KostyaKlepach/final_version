@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+body {
+	font-family: 'Comfortaa', cursive; 
+	max-width: 960px;
+	margin: auto;
+}
+header nav .logo {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+	justify-items: center;
+}
+header nav .main-menu {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	margin: 40px 0 40px 0;
+}
+header nav .main-menu a {
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+}
+header nav .main-menu a:hover {
+	color: #e93578;
+}
+
+header .banner {
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns:  90%;
+	justify-content: center;
+	padding:5%;
+	background-image: url(../img/bg_calc.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	opacity: 0.8;
+}
+header .banner_content {
+	border: 1px solid #000;
+	border-radius: 20px;
+ 	background-color: white;
+ 	padding:10px;
+}
+main .services1, .services2, .services3 {
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	margin: 30px;
+}
+main .services1 img, .services2 img, .services3 img{
+	max-width: 100%;
+	border-radius: 20px;
+	margin: 0 5px 0 5px;
+}
+@media (max-width: 599px) {
+	main .services1, .services2, .services3 {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+main .cooperation {
+	background-color: lightgrey;
+	border-radius: 20px;
+}
+main .cooperation .cooperation_info {
+	text-align: center;
+	padding-top: 5px;
+}
+main .cooperation .cooperation_items div {
+	border-radius: 20px;
+	background-color: #e93578;
+	min-height: 250px;
+	min-width: 185px;
+	margin: 10%;
+}
+main .cooperation .cooperation_items {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	text-align: center;
+}
+main .cooperation .cooperation_items div:hover,
+main .contacts .adress:hover,
+main .cooperation button:hover,
+main .about a img:hover,
+header nav .logo:hover,
+.form_button:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+main .cooperation .cooperation_items img {
+	padding-top: 15%;	
+}
+main .cooperation button {
+	margin-left: 5%;
+	margin-bottom: 20px;
+	width: 90%;
+	background-color: #e93578;
+	border-radius: 20px;
+}
+main .cooperation button:hover {
+	background-color: rgba(233,53,128,0.8);
+	cursor: pointer;
+}
+main .cooperation button a {
+	font-family: 'Comfortaa', cursive;
+	text-decoration: none;
+	color: white;
+}
+main .about {
+	background-image: 
+	linear-gradient(to top, rgba(233,53,128,0.8), 
+	rgba(233,53,128,0.8)),
+	url(../img/bg_bridge.jpg) ;
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	text-align: center;
+	margin: 40px 0 40px 0;
+	padding-top: 5px;
+}
+main .guaranty {
+	margin: 20px 0 20px 0;
+	text-align: center;
+	background-image:
+	linear-gradient(to top, rgb(235, 235, 235,0.7), 
+	rgba(235, 235, 235,0.4)),
+	 url(../img/buh.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+}
+main .guaranty .box1 {
+	grid-column: 1/3;
+}
+main .guaranty .box2{
+	grid-column: 1/2;
+}
+main .guaranty .box3{
+	grid-column: 1/2;
+}
+main .guaranty .box4{
+	grid-column: 1/2;
+}
+main .guaranty .box5{
+	grid-column: 2;
+	grid-row: 2/5;
+}
+main .guaranty .box5 form {
+	width: 90%;
+	min-height: 350px;
+	margin: 0 auto;
+}
+input[type="text"], input[type="email"], input[type="phone"] {
+	margin: 0 auto;
+	margin: 20px;
+	text-align: center;
+	width: 90%;
+	height: 50px;
+	font-family: 'Comfortaa', cursive;
+	font-size: 16px;
+	border-radius: 20px;
+}
+.form_button {
+	background:#e93578;
+	border-radius: 20px;
+	width: 50%;
+	min-width: 150px;
+	height: 40px;
+	font-family: 'Comfortaa', cursive;
+	font-size: 16px;
+}
+main .contacts {
+	background-image:
+	linear-gradient(to top, rgb(235, 235, 235,0.7), 
+	rgba(235, 235, 235,0.4)),
+	 url(../img/chair.jpg);
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 40px 0 40px 0;
+}
+main .contacts .adress {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 800px) {
+	main .contacts .adress{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+footer {
+	background:#c0c0c0;
+	text-align: center;
+	vertical-align: middle;
+	height: 20px;
+}
+footer p {
+	margin: 0;
+}
